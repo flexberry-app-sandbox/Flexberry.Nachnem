@@ -1,14 +1,7 @@
 ﻿{
-  "applicationCaption": "Nachnem",
-  "applicationTitle": "Nachnem",
+  "applicationCaption": "Логистика",
+  "applicationTitle": "Логистика",
   "items": [
-    {
-      "link": null,
-      "menuName": "логистика",
-      "caption": "Логистика",
-      "title": "Логистика",
-      "children": null
-    },
     {
       "link": null,
       "menuName": "номенклатура",
@@ -84,14 +77,14 @@
           "link": "i-i-s-nachnem-докум-поставки-l",
           "menuName": null,
           "caption": "Документ поставки",
-          "title": "Докум поставки",
+          "title": "Документ поставки",
           "children": null
         },
         {
           "link": "i-i-s-nachnem-формир-док-распр-l",
           "menuName": null,
           "caption": "Формирование документа распределения",
-          "title": "Формир док распр",
+          "title": "Формирование документа распределения",
           "children": null
         },
         {

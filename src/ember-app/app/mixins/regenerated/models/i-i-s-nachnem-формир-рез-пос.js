@@ -50,15 +50,30 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ФормирРезПосE', 'i-i-s-nachnem-формир-рез-пос', {
     дата: attr('Дата', { index: 0 }),
-    статусЗаказа: attr('Статус заказа', { index: 1 }),
-    наличиеДеф: attr('Наличие дефектов', { index: 2 }),
-    удовлКлиента: attr('Удовлетворенность клиента', { index: 3 })
+    статусЗаказа: attr('Статус заказа', { index: 2 }),
+    наличиеДеф: attr('Наличие дефектов', { index: 3 }),
+    удовлКлиента: attr('Удовлетворенность клиента', { index: 4 }),
+    формирДокРаспр: belongsTo('i-i-s-nachnem-формир-док-распр', 'Номер документа распределения', {
+      докумПоставки: belongsTo('i-i-s-nachnem-докум-поставки', '', {
+        клиенты: belongsTo('i-i-s-nachnem-клиенты', '', {
+          заказчик: attr('Заказчик', { index: 5 }),
+          адресПоставки: attr('Адрес поставки', { index: 6 }),
+          телефон: attr('Телефон', { index: 7 })
+        }, { index: -1, hidden: true }),
+        организация: belongsTo('i-i-s-nachnem-организация', '', {
+          наимОрганиз: attr('Наименование организации', { index: 8 })
+        }, { index: -1, hidden: true })
+      }, { index: -1, hidden: true })
+    }, { index: 1, displayMemberPath: 'номерДокРаспр' })
   });
 
   modelClass.defineProjection('ФормирРезПосL', 'i-i-s-nachnem-формир-рез-пос', {
     дата: attr('Дата', { index: 0 }),
     статусЗаказа: attr('Статус заказа', { index: 1 }),
     наличиеДеф: attr('Наличие дефектов', { index: 2 }),
-    удовлКлиента: attr('Удовлетворенность клиента', { index: 3 })
+    удовлКлиента: attr('Удовлетворенность клиента', { index: 3 }),
+    формирДокРаспр: belongsTo('i-i-s-nachnem-формир-док-распр', 'Номер документа распределения', {
+
+    }, { index: 4, displayMemberPath: 'номерДокРаспр' })
   });
 };

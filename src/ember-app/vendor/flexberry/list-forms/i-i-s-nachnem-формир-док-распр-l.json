@@ -2,7 +2,7 @@
   "newForm": "i-i-s-nachnem-формир-док-распр-e",
   "editForm": "i-i-s-nachnem-формир-док-распр-e",
   "external": false,
-  "caption": "Формир док распр",
+  "caption": "Формирование документа распределения",
   "name": "IISNachnemФормирДокРаспрL",
   "className": "ФормирДокРаспрL",
   "attrs": [],

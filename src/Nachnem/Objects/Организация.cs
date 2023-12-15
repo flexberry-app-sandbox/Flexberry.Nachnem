@@ -29,9 +29,14 @@ namespace IIS.Nachnem
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ОрганизацияE", new string[] {
-            "НаимОрганиз as \'Наименование организации\'"})]
+            "НаимОрганиз as \'Наименование организации\'",
+            "Сотрудники as \'ФИО\'"}, Hidden=new string[] {
+            "Сотрудники"})]
+    [MasterViewDefineAttribute("ОрганизацияE", "Сотрудники", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "ФИОСотр")]
     [View("ОрганизацияL", new string[] {
-            "НаимОрганиз as \'Наименование организации\'"})]
+            "НаимОрганиз as \'Наименование организации\'",
+            "Сотрудники.ФИОСотр as \'фио сотрудника\'"}, Hidden=new string[] {
+            "Сотрудники.ФИОСотр"})]
     public class Организация : ICSSoft.STORMNET.DataObject
     {
         

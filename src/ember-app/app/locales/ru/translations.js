@@ -51,7 +51,7 @@ $.extend(true, translations, {
     'i-i-s-nachnem-формир-рез-пос': IISNachnemФормирРезПосModel
   },
 
-  'application-name': 'Nachnem',
+  'application-name': 'Логистика',
 
   forms: {
     loading: {
@@ -90,7 +90,7 @@ $.extend(true, translations, {
       },
 
       footer: {
-        'application-name': 'Nachnem',
+        'application-name': 'Логистика',
         'application-version': {
           caption: 'Версия аддона {{version}}',
           title: 'Это версия аддона ember-flexberry, которая сейчас используется в этом тестовом приложении ' +
@@ -101,8 +101,8 @@ $.extend(true, translations, {
 
       sitemap: {
         'application-name': {
-          caption: 'Nachnem',
-          title: 'Nachnem'
+          caption: 'Логистика',
+          title: 'Логистика'
         },
         'application-version': {
           caption: 'Версия аддона {{version}}',
@@ -113,10 +113,6 @@ $.extend(true, translations, {
         index: {
           caption: 'Главная',
           title: ''
-        },
-        логистика: {
-          caption: 'Логистика',
-          title: 'Логистика'
         },
         номенклатура: {
           caption: 'Номенклатура',
@@ -169,6 +165,10 @@ $.extend(true, translations, {
             caption: 'Формирование результатов поставки',
             title: 'Формир рез пос'
           }
+        },
+        логистика: {
+          caption: 'Логистика',
+          title: 'Логистика'
         }
       }
     },

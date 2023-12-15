@@ -1,7 +1,16 @@
 ﻿{
-  "propertyLookup": [],
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ФормирДокРаспр",
+      "projection": "ФормирДокРаспрL",
+      "detailModelName": null
+    }
+  ],
   "external": false,
-  "caption": "Формир рез пос",
+  "caption": "Формирование результатов поставки",
   "name": "IISNachnemФормирРезПосE",
   "className": "ФормирРезПосE",
   "attrs": [],

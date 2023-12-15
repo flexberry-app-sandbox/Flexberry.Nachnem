@@ -36,6 +36,12 @@ export let ValidationRules = {
 
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ИнфОЗаказеE', 'i-i-s-nachnem-инф-о-заказе', {
-    количество: attr('Количество', { index: 0 })
+    товары: belongsTo('i-i-s-nachnem-товары', 'Наименование товара', {
+      наимТовара: attr('Наименование товара', { index: 0 }),
+      цена: attr('Цена товара', { index: 2 }),
+      масса: attr('Масса товара', { index: 3 }),
+      единицыИзмер: attr('Единицы измерения', { index: 4 })
+    }, { index: -1, hidden: true }),
+    количество: attr('Количество', { index: 1 })
   });
 };

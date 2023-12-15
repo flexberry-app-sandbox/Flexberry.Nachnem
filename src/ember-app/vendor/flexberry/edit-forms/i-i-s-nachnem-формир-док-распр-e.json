@@ -34,7 +34,7 @@
     }
   ],
   "external": false,
-  "caption": "Формир док распр",
+  "caption": "Формирование документа распределения",
   "name": "IISNachnemФормирДокРаспрE",
   "className": "ФормирДокРаспрE",
   "attrs": [],

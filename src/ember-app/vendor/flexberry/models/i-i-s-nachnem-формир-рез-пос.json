@@ -68,22 +68,107 @@
           "name": "статусЗаказа",
           "caption": "Статус заказа",
           "hidden": false,
-          "index": 1
+          "index": 2
         },
         {
           "name": "наличиеДеф",
           "caption": "Наличие дефектов",
           "hidden": false,
-          "index": 2
+          "index": 3
         },
         {
           "name": "удовлКлиента",
           "caption": "Удовлетворенность клиента",
           "hidden": false,
-          "index": 3
+          "index": 4
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": "НомерДокРаспр",
+          "lookupValueField": "номерДокРаспр",
+          "relationName": "ФормирДокРаспр",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ФормирДокРаспр.ДокумПоставки",
+              "belongsTo": [
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "ФормирДокРаспр.ДокумПоставки.Клиенты",
+                  "belongsTo": [],
+                  "hidden": false,
+                  "attrs": [
+                    {
+                      "name": "заказчик",
+                      "caption": "Заказчик",
+                      "hidden": false,
+                      "index": 5
+                    },
+                    {
+                      "name": "адресПоставки",
+                      "caption": "Адрес поставки",
+                      "hidden": false,
+                      "index": 6
+                    },
+                    {
+                      "name": "телефон",
+                      "caption": "Телефон",
+                      "hidden": false,
+                      "index": 7
+                    }
+                  ],
+                  "index": -1,
+                  "type": null,
+                  "caption": "",
+                  "name": "клиенты",
+                  "relatedTo": "i-i-s-nachnem-клиенты",
+                  "inverse": null
+                },
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "ФормирДокРаспр.ДокумПоставки.Организация",
+                  "belongsTo": [],
+                  "hidden": false,
+                  "attrs": [
+                    {
+                      "name": "наимОрганиз",
+                      "caption": "Наименование организации",
+                      "hidden": false,
+                      "index": 8
+                    }
+                  ],
+                  "index": -1,
+                  "type": null,
+                  "caption": "",
+                  "name": "организация",
+                  "relatedTo": "i-i-s-nachnem-организация",
+                  "inverse": null
+                }
+              ],
+              "hidden": false,
+              "attrs": [],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "докумПоставки",
+              "relatedTo": "i-i-s-nachnem-докум-поставки",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [],
+          "index": 1,
+          "type": "standard",
+          "caption": "Номер документа распределения",
+          "name": "формирДокРаспр",
+          "relatedTo": "i-i-s-nachnem-формир-док-распр",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     },
     {
@@ -115,7 +200,22 @@
           "index": 3
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": "НомерДокРаспр",
+          "lookupValueField": "номерДокРаспр",
+          "relationName": "ФормирДокРаспр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 4,
+          "type": "standard",
+          "caption": "Номер документа распределения",
+          "name": "формирДокРаспр",
+          "relatedTo": "i-i-s-nachnem-формир-док-распр",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     }
   ],

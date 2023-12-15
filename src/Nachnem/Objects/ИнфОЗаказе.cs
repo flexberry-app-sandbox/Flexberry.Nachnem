@@ -30,7 +30,11 @@ namespace IIS.Nachnem
     [Caption("Информация о заказе")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("ИнфОЗаказеE", new string[] {
-            "Количество as \'Количество\'"})]
+            "Товары.НаимТовара as \'Наименование товара\'",
+            "Количество as \'Количество\'",
+            "Товары.Цена as \'Цена товара\'",
+            "Товары.Масса as \'Масса товара\'",
+            "Товары.ЕдиницыИзмер as \'Единицы измерения\'"})]
     public class ИнфОЗаказе : ICSSoft.STORMNET.DataObject
     {
         

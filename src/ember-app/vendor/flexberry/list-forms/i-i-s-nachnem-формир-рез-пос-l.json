@@ -2,7 +2,7 @@
   "newForm": "i-i-s-nachnem-формир-рез-пос-e",
   "editForm": "i-i-s-nachnem-формир-рез-пос-e",
   "external": false,
-  "caption": "Формир рез пос",
+  "caption": "Формирование результатов поставки",
   "name": "IISNachnemФормирРезПосL",
   "className": "ФормирРезПосL",
   "attrs": [],

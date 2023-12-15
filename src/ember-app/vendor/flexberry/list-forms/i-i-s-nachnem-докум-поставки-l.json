@@ -2,7 +2,7 @@
   "newForm": "i-i-s-nachnem-докум-поставки-e",
   "editForm": "i-i-s-nachnem-докум-поставки-e",
   "external": false,
-  "caption": "Докум поставки",
+  "caption": "Документ поставки",
   "name": "IISNachnemДокумПоставкиL",
   "className": "ДокумПоставкиL",
   "attrs": [],

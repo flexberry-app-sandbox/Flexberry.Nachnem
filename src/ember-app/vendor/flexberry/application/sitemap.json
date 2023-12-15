@@ -1,0 +1,108 @@
+﻿{
+  "applicationCaption": "Nachnem",
+  "applicationTitle": "Nachnem",
+  "items": [
+    {
+      "link": null,
+      "menuName": "логистика",
+      "caption": "Логистика",
+      "title": "Логистика",
+      "children": null
+    },
+    {
+      "link": null,
+      "menuName": "номенклатура",
+      "caption": "Номенклатура",
+      "title": "Номенклатура",
+      "children": [
+        {
+          "link": "i-i-s-nachnem-товары-l",
+          "menuName": null,
+          "caption": "Товары",
+          "title": "Товары",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "информация-об-организации",
+      "caption": "Информация об организации",
+      "title": "Информация об организации",
+      "children": [
+        {
+          "link": "i-i-s-nachnem-организация-l",
+          "menuName": null,
+          "caption": "Организация",
+          "title": "Организация",
+          "children": null
+        },
+        {
+          "link": "i-i-s-nachnem-список-барж-l",
+          "menuName": null,
+          "caption": "Список барж",
+          "title": "Список барж",
+          "children": null
+        },
+        {
+          "link": "i-i-s-nachnem-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "Сотрудники",
+          "children": null
+        },
+        {
+          "link": "i-i-s-nachnem-пункт-погрузки-l",
+          "menuName": null,
+          "caption": "Пункт погрузки",
+          "title": "Пункт погрузки",
+          "children": null
+        },
+        {
+          "link": "i-i-s-nachnem-клиенты-l",
+          "menuName": null,
+          "caption": "Клиенты",
+          "title": "Клиенты",
+          "children": null
+        },
+        {
+          "link": "i-i-s-nachnem-список-контей-l",
+          "menuName": null,
+          "caption": "Список контейнеров",
+          "title": "Список контей",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "документация",
+      "caption": "Документация",
+      "title": "Документация",
+      "children": [
+        {
+          "link": "i-i-s-nachnem-докум-поставки-l",
+          "menuName": null,
+          "caption": "Документ поставки",
+          "title": "Докум поставки",
+          "children": null
+        },
+        {
+          "link": "i-i-s-nachnem-формир-док-распр-l",
+          "menuName": null,
+          "caption": "Формирование документа распределения",
+          "title": "Формир док распр",
+          "children": null
+        },
+        {
+          "link": "i-i-s-nachnem-формир-рез-пос-l",
+          "menuName": null,
+          "caption": "Формирование результатов поставки",
+          "title": "Формир рез пос",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

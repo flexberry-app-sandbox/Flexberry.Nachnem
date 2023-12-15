@@ -1,0 +1,55 @@
+﻿{
+  "name": "IISNachnemИнфОЗаказе",
+  "modelName": "i-i-s-nachnem-инф-о-заказе",
+  "className": "ИнфОЗаказе",
+  "nameSpace": "IIS.Nachnem",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "товары",
+      "relatedTo": "i-i-s-nachnem-товары",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "докумПоставки",
+      "relatedTo": "i-i-s-nachnem-докум-поставки",
+      "inverse": "инфОЗаказе"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ИнфОЗаказеE",
+      "modelName": "i-i-s-nachnem-инф-о-заказе",
+      "attrs": [
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

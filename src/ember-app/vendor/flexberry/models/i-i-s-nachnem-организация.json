@@ -1,0 +1,62 @@
+﻿{
+  "name": "IISNachnemОрганизация",
+  "modelName": "i-i-s-nachnem-организация",
+  "className": "Организация",
+  "nameSpace": "IIS.Nachnem",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наимОрганиз",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-nachnem-сотрудники",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОрганизацияE",
+      "modelName": "i-i-s-nachnem-организация",
+      "attrs": [
+        {
+          "name": "наимОрганиз",
+          "caption": "Наименование организации",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ОрганизацияL",
+      "modelName": "i-i-s-nachnem-организация",
+      "attrs": [
+        {
+          "name": "наимОрганиз",
+          "caption": "Наименование организации",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

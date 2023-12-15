@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-nachnem-товары-e",
+  "editForm": "i-i-s-nachnem-товары-e",
+  "external": false,
+  "caption": "Товары",
+  "name": "IISNachnemТоварыL",
+  "className": "ТоварыL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-nachnem-товары",
+      "modelProjection": "ТоварыL"
+    }
+  ]
+}

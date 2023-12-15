@@ -1,0 +1,47 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ДокумПоставки",
+      "projection": "ДокумПоставкиL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ПунктПогрузки",
+      "projection": "ПунктПогрузкиL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СписокБарж",
+      "projection": "СписокБаржL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СписокКонтей",
+      "projection": "СписокКонтейL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Формир док распр",
+  "name": "IISNachnemФормирДокРаспрE",
+  "className": "ФормирДокРаспрE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-nachnem-формир-док-распр",
+      "modelProjection": "ФормирДокРаспрE"
+    }
+  ]
+}

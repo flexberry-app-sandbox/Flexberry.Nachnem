@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISNachnemСотрудники",
+  "modelName": "i-i-s-nachnem-сотрудники",
+  "className": "Сотрудники",
+  "nameSpace": "IIS.Nachnem",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "фИОСотр",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СотрудникиE",
+      "modelName": "i-i-s-nachnem-сотрудники",
+      "attrs": [
+        {
+          "name": "фИОСотр",
+          "caption": "Ф и о сотр",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СотрудникиL",
+      "modelName": "i-i-s-nachnem-сотрудники",
+      "attrs": [
+        {
+          "name": "фИОСотр",
+          "caption": "Ф и о сотр",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

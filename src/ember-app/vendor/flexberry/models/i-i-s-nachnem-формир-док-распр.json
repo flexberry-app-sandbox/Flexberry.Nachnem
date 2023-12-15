@@ -1,0 +1,280 @@
+﻿{
+  "name": "IISNachnemФормирДокРаспр",
+  "modelName": "i-i-s-nachnem-формир-док-распр",
+  "className": "ФормирДокРаспр",
+  "nameSpace": "IIS.Nachnem",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерДокРаспр",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "докумПоставки",
+      "relatedTo": "i-i-s-nachnem-докум-поставки",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "пунктПогрузки",
+      "relatedTo": "i-i-s-nachnem-пункт-погрузки",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "списокБарж",
+      "relatedTo": "i-i-s-nachnem-список-барж",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "списокКонтей",
+      "relatedTo": "i-i-s-nachnem-список-контей",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ФормирДокРаспрE",
+      "modelName": "i-i-s-nachnem-формир-док-распр",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерДокРаспр",
+          "caption": "Номер документа распределения",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "НомерДокПост",
+          "lookupValueField": "номерДокПост",
+          "relationName": "ДокумПоставки",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ДокумПоставки.Клиенты",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "заказчик",
+                  "caption": "Заказчик",
+                  "hidden": false,
+                  "index": 3
+                },
+                {
+                  "name": "телефон",
+                  "caption": "Телефон",
+                  "hidden": false,
+                  "index": 4
+                },
+                {
+                  "name": "адресПоставки",
+                  "caption": "Адрес поставки",
+                  "hidden": false,
+                  "index": 5
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "клиенты",
+              "relatedTo": "i-i-s-nachnem-клиенты",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [],
+          "index": 2,
+          "type": "standard",
+          "caption": "Номер документа поставки",
+          "name": "докумПоставки",
+          "relatedTo": "i-i-s-nachnem-докум-поставки",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Адрес",
+          "lookupValueField": "адрес",
+          "relationName": "ПунктПогрузки",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 6,
+          "type": "standard",
+          "caption": "Наименование пункта погрузки",
+          "name": "пунктПогрузки",
+          "relatedTo": "i-i-s-nachnem-пункт-погрузки",
+          "inverse": null
+        },
+        {
+          "lookupValue": "НомерБаржи",
+          "lookupValueField": "номерБаржи",
+          "relationName": "СписокБарж",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 7,
+          "type": "standard",
+          "caption": "Номер баржи",
+          "name": "списокБарж",
+          "relatedTo": "i-i-s-nachnem-список-барж",
+          "inverse": null
+        },
+        {
+          "lookupValue": "НомерКонтей",
+          "lookupValueField": "номерКонтей",
+          "relationName": "СписокКонтей",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 8,
+          "type": "standard",
+          "caption": "Номер контейнера",
+          "name": "списокКонтей",
+          "relatedTo": "i-i-s-nachnem-список-контей",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ФормирДокРаспрL",
+      "modelName": "i-i-s-nachnem-формир-док-распр",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "номерДокРаспр",
+          "caption": "Номер документа распределения",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ДокумПоставки",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерДокПост",
+              "caption": "Номер документа поставки",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер документа поставки",
+          "name": "докумПоставки",
+          "relatedTo": "i-i-s-nachnem-докум-поставки",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СписокБарж",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерБаржи",
+              "caption": "Номер баржи",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер баржи",
+          "name": "списокБарж",
+          "relatedTo": "i-i-s-nachnem-список-барж",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ПунктПогрузки",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "адрес",
+              "caption": "Адрес пункта поставки",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Адрес пункта поставки",
+          "name": "пунктПогрузки",
+          "relatedTo": "i-i-s-nachnem-пункт-погрузки",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СписокКонтей",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерКонтей",
+              "caption": "Номер контейнера",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Номер контейнера",
+          "name": "списокКонтей",
+          "relatedTo": "i-i-s-nachnem-список-контей",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,125 @@
+﻿{
+  "name": "IISNachnemФормирРезПос",
+  "modelName": "i-i-s-nachnem-формир-рез-пос",
+  "className": "ФормирРезПос",
+  "nameSpace": "IIS.Nachnem",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "наличиеДеф",
+      "type": "boolean",
+      "flexberryType": "bool",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "статусЗаказа",
+      "type": "i-i-s-nachnem-состоян-заказа",
+      "flexberryType": "СостоянЗаказа",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "удовлКлиента",
+      "type": "i-i-s-nachnem-уд-кл",
+      "flexberryType": "УдКл",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "формирДокРаспр",
+      "relatedTo": "i-i-s-nachnem-формир-док-распр",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ФормирРезПосE",
+      "modelName": "i-i-s-nachnem-формир-рез-пос",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "статусЗаказа",
+          "caption": "Статус заказа",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "наличиеДеф",
+          "caption": "Наличие дефектов",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "удовлКлиента",
+          "caption": "Удовлетворенность клиента",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ФормирРезПосL",
+      "modelName": "i-i-s-nachnem-формир-рез-пос",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "статусЗаказа",
+          "caption": "Статус заказа",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "наличиеДеф",
+          "caption": "Наличие дефектов",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "удовлКлиента",
+          "caption": "Удовлетворенность клиента",
+          "hidden": false,
+          "index": 3
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

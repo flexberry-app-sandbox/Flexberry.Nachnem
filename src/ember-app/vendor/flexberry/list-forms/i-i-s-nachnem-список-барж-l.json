@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-nachnem-список-барж-e",
+  "editForm": "i-i-s-nachnem-список-барж-e",
+  "external": false,
+  "caption": "Список барж",
+  "name": "IISNachnemСписокБаржL",
+  "className": "СписокБаржL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-nachnem-список-барж",
+      "modelProjection": "СписокБаржL"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Формир рез пос",
+  "name": "IISNachnemФормирРезПосE",
+  "className": "ФормирРезПосE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-nachnem-формир-рез-пос",
+      "modelProjection": "ФормирРезПосE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-nachnem-пункт-погрузки-e",
+  "editForm": "i-i-s-nachnem-пункт-погрузки-e",
+  "external": false,
+  "caption": "Пункт погрузки",
+  "name": "IISNachnemПунктПогрузкиL",
+  "className": "ПунктПогрузкиL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-nachnem-пункт-погрузки",
+      "modelProjection": "ПунктПогрузкиL"
+    }
+  ]
+}

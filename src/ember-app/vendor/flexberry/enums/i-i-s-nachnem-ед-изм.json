@@ -1,0 +1,10 @@
+﻿{
+  "nameSpace": "IIS.Nachnem",
+  "className": "ЕдИзм",
+  "enumObjects": {
+    "Шт": "",
+    "Тонн": "",
+    "Кг": "",
+    "Л": ""
+  }
+}

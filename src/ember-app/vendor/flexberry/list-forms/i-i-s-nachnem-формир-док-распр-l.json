@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-nachnem-формир-док-распр-e",
+  "editForm": "i-i-s-nachnem-формир-док-распр-e",
+  "external": false,
+  "caption": "Формир док распр",
+  "name": "IISNachnemФормирДокРаспрL",
+  "className": "ФормирДокРаспрL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-nachnem-формир-док-распр",
+      "modelProjection": "ФормирДокРаспрL"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-nachnem-список-контей-e",
+  "editForm": "i-i-s-nachnem-список-контей-e",
+  "external": false,
+  "caption": "Список контей",
+  "name": "IISNachnemСписокКонтейL",
+  "className": "СписокКонтейL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-nachnem-список-контей",
+      "modelProjection": "СписокКонтейL"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+<h3 class="ui header">{{t "forms.i-i-s-nachnem-формир-рез-пос-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-nachnem-формир-рез-пос-e.дата-caption"}}</label>
+    {{flexberry-simpledatetime
+      type="date"
+      readonly=readonly
+      value=model.дата
+      class=(if (v-get validationModel "дата" "isInvalid") "error")
+      data-test-i-i-s-nachnem-формир-рез-пос-e-дата=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "дата" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-nachnem-формир-рез-пос-e-статусЗаказа="true">
+    <label>{{t "forms.i-i-s-nachnem-формир-рез-пос-e.статусЗаказа-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-nachnem-состоян-заказа")
+      value=model.статусЗаказа
+      class=(if (v-get validationModel "статусЗаказа" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "статусЗаказа" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.i-i-s-nachnem-формир-рез-пос-e.наличиеДеф-caption"}}</label>
+    {{flexberry-checkbox
+      readonly=readonly
+      value=model.наличиеДеф
+      class=(if (v-get validationModel "наличиеДеф" "isInvalid") "error")
+      data-test-i-i-s-nachnem-формир-рез-пос-e-наличиеДеф=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "наличиеДеф" "message")}}
+  </div>
+  <div class="field" data-test-i-i-s-nachnem-формир-рез-пос-e-удовлКлиента="true">
+    <label>{{t "forms.i-i-s-nachnem-формир-рез-пос-e.удовлКлиента-caption"}}</label>
+    {{flexberry-dropdown
+      items=(flexberry-enum "i-i-s-nachnem-уд-кл")
+      value=model.удовлКлиента
+      class=(if (v-get validationModel "удовлКлиента" "isInvalid") "error")
+      readonly=readonly
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel "удовлКлиента" "message")}}
+  </div>
+</form>
